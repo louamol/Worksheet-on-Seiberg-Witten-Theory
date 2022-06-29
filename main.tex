@@ -1,0 +1,44 @@
+\documentclass{worksheetclass}
+
+\usepackage{import}
+\import{}{custom_macros.tex}
+
+\title{Seiberg-Witten Theory}
+
+% DOCUMENT -----------------------------
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+
+
+\section{$\SU(n)$ $\mN=2$ supersymmetric Yang-Mills theory in $D=4$}
+
+    \subsection{Field content}
+
+    \subsection{Lagrangian}
+
+    \subsection{Low energy effective lagrangian}
+
+        It is known (just from supersymmetry) that the low energy effective lagrangian must be of the for the form
+        \begin{equation}
+            \L = \frac{1}{4\pi}\Im\left[\int\d^2\theta\d^2\bar{\theta}~K(A,\bar{A})+\int\d^2\theta\left(\frac{1}{2}\sum\tau(A)W^\alpha W_\alpha\right)\right]
+        \end{equation}
+        with
+        \begin{equation}
+            K(A,\bar{A})=\pdv{\F(A)}{A}\bar{A},\qquad \tau(A)=\pdv[2]{\F(A)}{A}.
+        \end{equation}
+        \todo{precise the nature of $A$}. It iss therefore completely determined the holomorphic function $\F$, called the \emph{prepotential}. By ``low enegery effective lagrangian'', we mean the part of the effective lagrangian that contains the leading terms when the momenta vanish. In the full effective lagrangian there are of course infinitely many higher derivative terms. These are not governed by holomorphic quantities and we therefore have no control on them regarding quantum corrections.
+
+        The map $K(A,\bar{A})$ is the Kähler potential, which gives a supersymmetric non-linear sigma-model for the field $A$.
+
+
+
+\printbibliography
+
+\end{document}
