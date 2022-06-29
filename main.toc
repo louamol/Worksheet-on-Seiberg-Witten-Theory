@@ -1,12 +1,16 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {1}$\mathcal {N}=2$ supersymmetric Yang-Mills theories}{1}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}$\text {SU}(n)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory in $D=4$}{1}{section.2}%
+\contentsline {subsection}{\numberline {1.1}Lagrangian}{1}{subsection.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Field content}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {1.2}Classical moduli space of vacua}{2}{subsection.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Lagrangian}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {1.3}Low energy effective lagrangian}{2}{subsection.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Low energy effective lagrangian}{1}{subsection.2.3}%
+\contentsline {section}{\numberline {2}$\text {SU}(2)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory in $D=4$}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Generalization to other groups}{3}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}SW geometry from string duality}{3}{section.4}%

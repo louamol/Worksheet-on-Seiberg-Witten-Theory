@@ -13,29 +13,91 @@
 
 \tableofcontents
 
-\section{Introduction}
-
-
-
-\section{$\SU(n)$ $\mN=2$ supersymmetric Yang-Mills theory in $D=4$}
-
-    \subsection{Field content}
+\section{$\mN=2$ supersymmetric Yang-Mills theories}
 
     \subsection{Lagrangian}
 
+        We consider a general pure SYM theory with gauge group $G$. The $\mN=2$ vector multipletcan be written in terms of $\mN=1$ superfields as follows
+        \begin{equation}
+            [\mN=2 \text{ vector multiplet}] : V=(\lambda_\alpha,A_\mu,D)\oplus \Phi=(\phi,\psi_\alpha,F)
+        \end{equation}
+        where $V$ is a vector superfield and $\Phi$ is a chiral superfield. We use the notation
+        \begin{align}
+            \phi=\phi^a T_a,\quad \psi_\alpha=\psi^a_\alpha T_a,\quad F=F^a T_a,\\
+            \lambda=\lambda^a T_a,\quad \D_\alpha=\D^a_\alpha T_a,\quad A_\mu=A^a_\mu T_a,
+        \end{align}
+        where $\{T_a\}_{a=1,\dots,\dim G}$ are the generators of $\mathfrak{g}$, the complexified Lie algebra of $G$. Note that all fields except $A_\mu$ are complex and therefore actually belong to the complexified Lie algebra $\mathfrak{g}_\C\equiv\C\otimes\mathfrak{g}=\mathfrak{g}+i\mathfrak{g}$.
+        
+        The representation under which the fields transform is dictated by their $\mN=2$ origin: $V$ and $\Phi$ must transform in the adjoint representation of the gauge group while $H_1$ and $\bar{H}_2$ buth transform in any representation $R$. Our notation implies that $H_2$ transform in the complex conjugate representation $\bar{R}$.
+
+        The R-symmetry group is $\U(2)_R$ and the lagrangian should be invariant under its compact component $\SU(2)_R$. This is a necessary and sufficient condition to have $\mN=2$ supersymmetry. All bosonic fields $A_\mu,D,F$ and $\phi$ transform as singlets and $(\lambda_\alpha,\psi_\alpha)$ transform as a doublet.
+
+        The most general pure gauge lagrangian reads
+        \begin{eqnarray}
+            \L^{\mN=2}_{\text{SYM}} = \frac{1}{32\pi}\Im\left[\tau\int\d^2\theta~W^\alpha W_\alpha\right] + \in\d^2\theta\d^2\bar{\theta}~\tr\left(\bar{\Phi}e^{2gV}\Phi\right)
+        \end{eqnarray}
+        We note that the lagrangian does not have a superpotential. The auxiliary fields equation of motions are
+        \begin{align}
+            F^a &= 0,\\
+            D^a &= -g[\phi,\phi^\dagger]^a.
+        \end{align}
+        Even though there is no superpotential, there is still a potential term of the scalar fields coming from the D-terms, it reads
+        \begin{eqnarray}
+            V(\phi,\phi^\dagger)=\frac{1}{2}D^aD_a=\frac{1}{2}g^2\tr[\phi,\phi^\dagger]^2.\label{eq:potential}
+        \end{eqnarray}
+
+    \subsection{Classical moduli space of vacua}
+
+        The potential \eqref{eq:potential} vanishes if and only if $\phi$ belongs to the complexified Cartan $\mathfrak{h}_\C$ of $\mathfrak{g}$. At a general point of the moduli space, the scalar fields matrices can be diagonalized using the gauge symmetry. The moduli space is therefore parametrized by the eigenvalues of the matrices, i.e. by $r$ complex numbers, where $r$ is the rank the $\mathfrak{h}$. The diagonalization step does not fully breaks the gauge symmetry, there still is $U(1)^r$ symmetry. The low energy dynamic is the that of $r$ massless vector multiplets and $\dim G-r$ massive ones, with masses depending on the specific VEV's.
+
+        Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M_V$ and the Higgs branch $\M_H$ is empty. The classical moduli space is therefore
+        \begin{eqnarray}
+            \M_c = \M_V\times\M_H=\frac{\C^r}{G_{\text{Weyl}}}
+        \end{eqnarray}
+        where the $G_{\text{Weyl}}$ factor is the Weyl group of the Cartan subalgebra, the remenant of the gauge symmetry that acts and the Cartan algebra.\todo{clarify with the $U(1)$'s}
+
     \subsection{Low energy effective lagrangian}
 
-        It is known (just from supersymmetry) that the low energy effective lagrangian must be of the for the form
+        It is known (just from supersymmetry) that the low energy effective lagrangian\footnote{By ``low energy effective lagrangian'', we mean the part of the effective lagrangian that contains the leading terms when the momenta vanish. In the full effective lagrangian there are of course infinitely many higher derivative terms. These are not governed by holomorphic quantities and we therefore have no control on them regarding quantum corrections.} must be of the for the form
         \begin{equation}
-            \L = \frac{1}{4\pi}\Im\left[\int\d^2\theta\d^2\bar{\theta}~K(A,\bar{A})+\int\d^2\theta\left(\frac{1}{2}\sum\tau(A)W^\alpha W_\alpha\right)\right]
+            \L^{\mN=2}_{\text{eff}} = \frac{1}{4\pi}\Im\left[\int\d^2\theta\d^2\bar{\theta}~K(\Phi,\bar{\Phi})+\int\d^2\theta\left(\frac{1}{2}\sum\tau(\Phi)W^\alpha W_\alpha\right)\right]
         \end{equation}
         with
         \begin{equation}
-            K(A,\bar{A})=\pdv{\F(A)}{A}\bar{A},\qquad \tau(A)=\pdv[2]{\F(A)}{A}.
+            K(\Phi,\bar{\Phi})=-\frac{i}{32\pi}\pdv{\F(\Phi)}{\Phi^a}\bar{\Phi}^a+\text{h.c.},\qquad \F_{ab}(\Phi)=\pdv{\F(\Phi)}{\Phi^a}{\Phi^b}.\label{eq:effectivelagftcs}
         \end{equation}
-        \todo{precise the nature of $A$}. It iss therefore completely determined the holomorphic function $\F$, called the \emph{prepotential}. By ``low enegery effective lagrangian'', we mean the part of the effective lagrangian that contains the leading terms when the momenta vanish. In the full effective lagrangian there are of course infinitely many higher derivative terms. These are not governed by holomorphic quantities and we therefore have no control on them regarding quantum corrections.
+        It is therefore completely determined by the holomorphic function $\F$, called the \emph{prepotential}. The same model can be obtained from the usual lagrangian by just relaxing the renormalizability condition. We recover a renomalizable lagrangian by taking $\F(\Phi)=\frac{1}{2}\tau\tr\Phi^2$
 
-        The map $K(A,\bar{A})$ is the Kähler potential, which gives a supersymmetric non-linear sigma-model for the field $A$.
+        The map $K(A,\bar{A})$ is the Kähler potential, which gives a supersymmetric non-linear sigma-model for the field $\Phi$. It defines a metric on the moduli space as
+        \begin{equation}
+            ds^2=g_{i\bar{j}}(\Phi,\bar{\Phi})\d\Phi^a\d\bar{\Phi}^b = \pdv{K(\Phi,\bar{\Phi})}{\Phi^a}{\bar{\Phi}^b}\d\Phi^a\d\bar{\Phi}^b.
+        \end{equation}
+       From \eqref{eq:effectivelagftcs}, we see that 
+        \begin{equation}
+            ds^2=\pdv{K(\Phi,\bar{\Phi})}{\Phi^a}{\bar{\Phi}^b}\d\Phi^a\d\bar{\Phi}^b = \Im\left[\pdv{\F(\Phi)}{\Phi^a}{\Phi^b}\right]\d\Phi^a\d\bar{\Phi}^b
+        \end{equation}
+        thus the coefficients $\F_{ab}$ can be interpreted as coupling constant but they are also related to the metric on the moduli space.
+
+        The potential is the effective lagrangian is given by
+        \begin{equation}
+            V(\phi,\phi^\dagger)=-\frac{1}{2\pi}\left(\Im\F_{ab}(\phi)\right)^{-1}[\phi^\dagger,\F_c(\phi)T_c]^a[\phi^\dagger,\F_d(\phi)T_d]^b.
+        \end{equation}
+        The Coulomb branch is therefore a Kähler manifold. Since the the Kähler potential can be written in terms of a holomorphic function as in \eqref{eq:effectivelagftcs}, it is more precisely a special Kähler manifold.
+
+        If we were to add a hypermultiplet, we would have to additional complex scalars (one from each chiral superfields of the decomposition of the hypermultiplet). This new sigma-model would then define quaternionic manifold known as a Hyperkähler manifold. Due to the existence of those two sets of scalars (those belonging to the vector multiplet and those belonging to the hypermultiplet), the classical moduli space has the more general form
+        \begin{equation}
+            \M_c=\M_V\times\M_H
+        \end{equation}
+        where $\M_V$ is a Kähler manifold and $\M_H$ a Hyperkähler manifold.
+
+
+    \section{$\SU(2)$ $\mN=2$ supersymmetric Yang-Mills theory in $D=4$}
+
+    
+
+\section{Generalization to other groups}
+
+\section{SW geometry from string duality}
 
 
 
