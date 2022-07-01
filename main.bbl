@@ -16,5 +16,37 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{bertolinisusy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3c971bce1e85d768517bf7a062f488d9}{%
+           family={Bertolini},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{fullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{bibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorbibnamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authornamehash}{3c971bce1e85d768517bf7a062f488d9}
+      \strng{authorfullhash}{3c971bce1e85d768517bf7a062f488d9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Supersymmetry}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
+      \endverb
+      \verb{url}
+      \verb https://people.sissa.it/~bertmat/teaching.htm
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

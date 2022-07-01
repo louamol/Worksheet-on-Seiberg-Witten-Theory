@@ -17,11 +17,12 @@
 
     \subsection{Lagrangian}
 
-        We consider a general pure SYM theory with gauge group $G$. The $\mN=2$ vector multipletcan be written in terms of $\mN=1$ superfields as follows
-        \begin{equation}
-            [\mN=2 \text{ vector multiplet}] : V=(\lambda_\alpha,A_\mu,D)\oplus \Phi=(\phi,\psi_\alpha,F)
-        \end{equation}
-        where $V$ is a vector superfield and $\Phi$ is a chiral superfield. We use the notation
+        Let us start by considering a general SYM theory with gauge group $G$. The $\mN=2$ superfields for theories without gravities are the the hypermultiplet and the vector multiplet. The $\mN=2$ superspace being much more complicated, it is convenient to use use $\mN=1$ superspace and express the $\mN=2$ sueprfields in terms of $\mN=1$ superfields:
+        \begin{align}
+            [\mN=2 \text{ vector multiplet}] &: V=(\lambda_\alpha,A_\mu,D)\oplus \Phi=(\phi,\psi_\alpha,D)\\
+            [\mN=2 \text{ hypermultiplet}] &: H_1=(H_1,\psi_{1\alpha},F_1)\oplus \bar{H}_2=(\bar{H}_2,\bar{\psi}_{2\dalpha},\bar{F}_2)
+        \end{align}
+        where $V$ is a vector superfield and $\Phi,H_1,H_2$ are chiral superfields. We use the notation
         \begin{align}
             \phi=\phi^a T_a,\quad \psi_\alpha=\psi^a_\alpha T_a,\quad F=F^a T_a,\\
             \lambda=\lambda^a T_a,\quad \D_\alpha=\D^a_\alpha T_a,\quad A_\mu=A^a_\mu T_a,
@@ -34,7 +35,7 @@
 
         The most general pure gauge lagrangian reads
         \begin{eqnarray}
-            \L^{\mN=2}_{\text{SYM}} = \frac{1}{32\pi}\Im\left[\tau\int\d^2\theta~W^\alpha W_\alpha\right] + \in\d^2\theta\d^2\bar{\theta}~\tr\left(\bar{\Phi}e^{2gV}\Phi\right)
+            \L^{\mN=2}_{\text{SYM}} = \frac{1}{32\pi}\Im\left[\tau\int\d^2\theta~W^\alpha W_\alpha\right] + \in\d^2\theta\d^2\bar{\theta}~\tr\left(\bar{\Phi}e^{2gV}\Phi\right)\label{eq:N2lag}
         \end{eqnarray}
         We note that the lagrangian does not have a superpotential. The auxiliary fields equation of motions are
         \begin{align}
@@ -52,11 +53,70 @@
 
         Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M_V$ and the Higgs branch $\M_H$ is empty. The classical moduli space is therefore
         \begin{eqnarray}
-            \M_c = \M_V\times\M_H=\frac{\C^r}{G_{\text{Weyl}}}
+            \M_c = \M_{V,c}\times\M_{H,c}=\frac{\C^r}{W_G}\label{eq:classicalmodulispaceproduct}
         \end{eqnarray}
-        where the $G_{\text{Weyl}}$ factor is the Weyl group of the Cartan subalgebra, the remenant of the gauge symmetry that acts and the Cartan algebra.\todo{clarify with the $U(1)$'s}
+        where the $W_G$ factor is the Weyl group of the Cartan subalgebra, the remenant of the gauge symmetry that acts and the Cartan algebra.\todo{clarify with the $U(1)$'s}
 
-    \subsection{Low energy effective lagrangian}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.35]{Pictures/classicalmodulispace.png}
+            \caption{$\mN=2$ classical moduli space, from \cite{bertolinisusy}.}
+        \end{figure}
+
+    \subsection{Quantum moduli space of vacua}
+
+        We have seen the classical part of the story for the moduli space. How does quantum corrections change it? This a complicated question and it the goal of these notes to explain how to answer it. At this point, we can already anticipate three very important properties of the quantum moduli space $\M_q$:
+        \begin{enumerate}
+            \item \textbf{Product structure:} the $\mN=2$ selection rule that dictates that the classical moduli space has to look locally like a product \eqref{eq:classicalmodulispaceproduct} comes from the supersymmetry algebra and therefore also holds at the quantum level. Hence, locally, we have
+            \begin{equation}
+                \M_q = \M_{V,q}\times\M_{H,q}.\label{eq:quantummodulispaceproduct}
+            \end{equation}
+            \item \textbf{The Higgs branch is classically exact:} $\mN=2$ supersymmetry implies that the special Kähler metric on $\M_{V,c}$ and that the imaginary part if the generalized complexified gauge coupling $\tau_{IJ}$ are related. The former only depends on the scalar fields $\phi^I$ while the latter undergoes renormalization at one-loop. Its quantum-corrected expression is a function of the strong-coupling scale $\Lambda$, which therefore appears in the lagrangian in the same way as a VEV of a scalar belonging to a vector multiplet. However, the metric does not depend on those scalars and therefore doe snot depend on $\Lambda$ either. This means that taking the limit $\Lambda\to0$ will not change the metric in anyway; it classically exact:
+            \begin{equation}
+                \M_{H,c}=\M_{H,q}.
+            \end{equation}
+            On the other hand, the metric on the Coulomb brach can receive quantum corrections and solving the theory boils down to finding this metric. This explain why we will mostly focus on the Coulomb branch metric.
+            \item \textbf{Existence of moduli space:} in $\mN=2$ theories, the moduli space can never be completely lifted, unlike for $\mN=1$ theories for example. This is obvious for the Higgs branch; since it is classicaly exact, existance at classical level implies existence at the quantum level. For the Coulomb branch on the other hand, it is less obvious and it is explained in \cite[p. 282]{bertolinisusy}.
+        \end{enumerate}
+
+        What about singularities? The classical moduli space admits singularities of enhanced gauge symmetry. However, the quantum moduli space cannot admit such singularities. This a result that we will show in the following. More precisely, it can have singularities where some massive particles become massless but those particles will never be gauge fields.There are no point of enhanced gauge symmetry and the theory is always in the Coulomb phase. In stead, there exist other types of singularities, such as Argyres-Douglas singularities for example, where mutually non-local particles become simultaneously massless.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.35]{Pictures/quantummodulispace.png}
+            \caption{$\mN=2$ quantum moduli space, from \cite{bertolinisusy}.}
+        \end{figure}
+
+\section{Low energy effective actions}
+
+    \subsection{General discussion}
+
+        The leading dynamic of any (supersymmetric or non-supersymmetric) asyptotically free theory around a vacua where the potential vanishes is governed by massless fields. In this limit, the theory is scale invariant, by definition, and is at an IR fixed point of the RG flow. However, the nature of this IR fixed point can be if two kinds:
+        \begin{enumerate}
+            \item If no massless fields are present initially, there are no propagating degrees of freedom in the low-energy limit and the IR fiwed point is trivial.
+            \item If the initial theory contains some massless fields, the theory can be in a free or interacting phase and the IR fixed point is non-trivial.
+        \end{enumerate}
+        
+        \begin{theorem}[Colemann-Gross]
+            In four spacetime dimensions, any theory of scalars, spinors and abelian gauge fields flows in the IR to a free (or trivial if everything gets a mass) theory.
+        \end{theorem}
+        This provides us with a necessary condition for having an interacting conformal field theory at low energy: there must be at least one massless non-abelian gauge field in the low-energy effective action. Note there are no general tool to study strongly coupled, interacting conformal field theories.
+
+        Motivated by the previous discussion, we will only focus on effective theories that have scalars, spinors and abelian gauge fields. This is not such a restriction since for both $\mN=2$ and $\mN=4$ theories, a large fraction of the moduli space enjoys such an abelian, IR-free phase.
+        
+        What is the field content of the effective action ? A massless charged field will becomes massive though Higgs mechanism and then decouple as the energy scale is taken to be lower than the mass, so it cannot appear in the effective action. If, on the contrary, a massless is charged, it would still decouple and not appear in the effective action. We conclude that only massless neutral fields can appear in the low energy effective action. The low energy effective lagrangian must be of the form
+        \begin{equation}
+            \L = g_{ij}(\phi)\p\mu\phi^i\p^\mu\phi^j+\frac{1}{2}\Im[\tau_{IJ}(\phi)\F^I_{\mu\nu}\F^{J~\mu\nu}]+\text{ fermions}
+        \end{equation}
+        where $i,j$ run on neutral massless scalar fields and $I,J$ on abelian gauge fields. The \emph{complexified gauge coupling} $\tau_{IJ}$ and the field strength are defined as follows:
+        \begin{equation}
+            \tau_{IJ}=\frac{\theta_{IJ}}{2\pi}+\frac{4\pi i}{g^2_{IJ}}.
+        \end{equation}
+        The sigma-model metric $g_{ij}(\phi)$ is the metric on the moduli space $\M$, whose coordinates are the massless scalar fields VEV's.
+
+    \subsection{$\mN=2$ effective action}
+
+        Let us focus on $\mN=2$ supersymmetric theories and start from the most general asymptotically free renormalizable action. This action is fully characterized by the gauge group $G$ and the matter content, it is given by \eqref{eq:N2lag} for a pure gauge theory.
 
         It is known (just from supersymmetry) that the low energy effective lagrangian\footnote{By ``low energy effective lagrangian'', we mean the part of the effective lagrangian that contains the leading terms when the momenta vanish. In the full effective lagrangian there are of course infinitely many higher derivative terms. These are not governed by holomorphic quantities and we therefore have no control on them regarding quantum corrections.} must be of the for the form
         \begin{equation}
@@ -72,7 +132,7 @@
         \begin{equation}
             ds^2=g_{i\bar{j}}(\Phi,\bar{\Phi})\d\Phi^a\d\bar{\Phi}^b = \pdv{K(\Phi,\bar{\Phi})}{\Phi^a}{\bar{\Phi}^b}\d\Phi^a\d\bar{\Phi}^b.
         \end{equation}
-       From \eqref{eq:effectivelagftcs}, we see that 
+        From \eqref{eq:effectivelagftcs}, we see that 
         \begin{equation}
             ds^2=\pdv{K(\Phi,\bar{\Phi})}{\Phi^a}{\bar{\Phi}^b}\d\Phi^a\d\bar{\Phi}^b = \Im\left[\pdv{\F(\Phi)}{\Phi^a}{\Phi^b}\right]\d\Phi^a\d\bar{\Phi}^b
         \end{equation}
