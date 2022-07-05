@@ -17,26 +17,26 @@
 
     \subsection{Lagrangian}
 
-        Let us start by considering a general SYM theory with gauge group $G$. The $\mN=2$ superfields for theories without gravities are the the hypermultiplet and the vector multiplet. The $\mN=2$ superspace being much more complicated, it is convenient to use use $\mN=1$ superspace and express the $\mN=2$ sueprfields in terms of $\mN=1$ superfields:
+        Let us start by considering a general SYM theory with gauge group $G$. The $\mN=2$ superfields for theories without gravities are the hypermultiplet and the vector multiplet. The $\mN=2$ superspace being very complicated, it is more convenient to use $\mN=1$ superspace. To do this, we start by writing the $\mN=2$ superfields in terms of $\mN=1$ superfields:
         \begin{align}
             [\mN=2 \text{ vector multiplet}] &: V=(\lambda_\alpha,A_\mu,D)\oplus \Phi=(\phi,\psi_\alpha,D)\\
             [\mN=2 \text{ hypermultiplet}] &: H_1=(H_1,\psi_{1\alpha},F_1)\oplus \bar{H}_2=(\bar{H}_2,\bar{\psi}_{2\dalpha},\bar{F}_2)
         \end{align}
-        where $V$ is a vector superfield and $\Phi,H_1,H_2$ are chiral superfields. We use the notation
+        where $V$ is a vector superfield and $\Phi,H_1,H_2$ are chiral superfields. We can then take the most general $\mN=1$ SYM theory that contains those fields in the wite proportions and representations and impose additional constraint to have $\mN=2$ supersymmetry. We use the notation
         \begin{align}
             \phi=\phi^a T_a,\quad \psi_\alpha=\psi^a_\alpha T_a,\quad F=F^a T_a,\\
             \lambda=\lambda^a T_a,\quad \D_\alpha=\D^a_\alpha T_a,\quad A_\mu=A^a_\mu T_a,
         \end{align}
-        where $\{T_a\}_{a=1,\dots,\dim G}$ are the generators of $\mathfrak{g}$, the complexified Lie algebra of $G$. Note that all fields except $A_\mu$ are complex and therefore actually belong to the complexified Lie algebra $\mathfrak{g}_\C\equiv\C\otimes\mathfrak{g}=\mathfrak{g}+i\mathfrak{g}$.
+        where $\{T_a\}_{a=1,\dots,\dim G}$ are the generators of $\mathfrak{g}$, the Lie algebra of $G$. Note that all fields except $A_\mu$ are complex and therefore actually belong to the complexified Lie algebra $\mathfrak{g}_\C\equiv\C\otimes\mathfrak{g}=\mathfrak{g}+i\mathfrak{g}$.
         
         The representation under which the fields transform is dictated by their $\mN=2$ origin: $V$ and $\Phi$ must transform in the adjoint representation of the gauge group while $H_1$ and $\bar{H}_2$ buth transform in any representation $R$. Our notation implies that $H_2$ transform in the complex conjugate representation $\bar{R}$.
 
         The R-symmetry group is $\U(2)_R$ and the lagrangian should be invariant under its compact component $\SU(2)_R$. This is a necessary and sufficient condition to have $\mN=2$ supersymmetry. All bosonic fields $A_\mu,D,F$ and $\phi$ transform as singlets and $(\lambda_\alpha,\psi_\alpha)$ transform as a doublet.
 
-        The most general pure gauge lagrangian reads
-        \begin{eqnarray}
-            \L^{\mN=2}_{\text{SYM}} = \frac{1}{32\pi}\Im\left[\tau\int\d^2\theta~W^\alpha W_\alpha\right] + \in\d^2\theta\d^2\bar{\theta}~\tr\left(\bar{\Phi}e^{2gV}\Phi\right)\label{eq:N2lag}
-        \end{eqnarray}
+        The most general pure gauge lagrangian, i.e. for an $\mN=2$ vector superfield, reads
+        \begin{equation}
+            \L^{\mN=2}_{\text{gauge}} = \frac{1}{32\pi}\Im\left[\tau\int\d^2\theta~W^\alpha W_\alpha\right] + \int\d^2\theta\d^2\bar{\theta}~\tr\left(\bar{\Phi}e^{2gV}\Phi\right)\label{eq:N2lag}
+        \end{equation}
         We note that the lagrangian does not have a superpotential. The auxiliary fields equation of motions are
         \begin{align}
             F^a &= 0,\\
@@ -47,13 +47,26 @@
             V(\phi,\phi^\dagger)=\frac{1}{2}D^aD_a=\frac{1}{2}g^2\tr[\phi,\phi^\dagger]^2.\label{eq:potential}
         \end{eqnarray}
 
+        We can add several $\mN=2$ hypermultiplets. The scalar fields $H_1$ and $\bar{H}_2$ form an $\SU(2)_R$ doublet. They cannot interact with each other since there is no cubic $\SU(2)$ invariant. In consequence there is no renormalizable superpotential and all interactions are gauge interactions. The most general lagrangian is
+        \begin{equation}
+            \L^{\mN=2}_{\text{matter}} = \int\d^2\theta\d^2\bar{\theta}(\bar{H}_1e^{2gV_R}H_1+\bar{H}_2e^{-2gV_R}H_2)+\int\d^2\theta\sqrt{2}gH_1\Phi H_2+\text{h.c.}
+        \end{equation}
+        were the index $R$ of the vector superfield $V$ refers to the representation of $G$ carried by the hypermultiplets. The full lagrangian is
+        \begin{equation}
+            \L^{\mN=2}_{\text{SYM}}=\L^{\mN=2}_{\text{gauge}}+\L^{\mN=2}_{\text{matter}}.
+        \end{equation}
+        Eliminating the auxiliary fields $F_1$ and $F_2$, the scalar potential for the hypermultiplets can be recast as a D-term contribution only and reads
+        \begin{equation}
+            V(H_2,H_2)=\frac{1}{2}D^2=\frac{1}{2}g^2\abs{\bar{H}_1T^a_RH_1-\bar{H}_2T^a_RH_2}^2, \qquad D^a=g\tr(\bar{H}_1T^a_RH_1-\bar{H}_2T^a_RH_2).
+        \end{equation}
+
     \subsection{Classical moduli space of vacua}
 
         The potential \eqref{eq:potential} vanishes if and only if $\phi$ belongs to the complexified Cartan $\mathfrak{h}_\C$ of $\mathfrak{g}$. At a general point of the moduli space, the scalar fields matrices can be diagonalized using the gauge symmetry. The moduli space is therefore parametrized by the eigenvalues of the matrices, i.e. by $r$ complex numbers, where $r$ is the rank the $\mathfrak{h}$. The diagonalization step does not fully breaks the gauge symmetry, there still is $U(1)^r$ symmetry. The low energy dynamic is the that of $r$ massless vector multiplets and $\dim G-r$ massive ones, with masses depending on the specific VEV's.
 
-        Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M_V$ and the Higgs branch $\M_H$ is empty. The classical moduli space is therefore
+        Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M^V$ and the Higgs branch $\M^H$ is empty. The classical moduli space is therefore
         \begin{eqnarray}
-            \M_c = \M_{V,c}\times\M_{H,c}=\frac{\C^r}{W_G}\label{eq:classicalmodulispaceproduct}
+            \M_c = \M^V_{c}\times\M^H_{c}=\frac{\C^r}{W_G}\label{eq:classicalmodulispaceproduct}
         \end{eqnarray}
         where the $W_G$ factor is the Weyl group of the Cartan subalgebra, the remenant of the gauge symmetry that acts and the Cartan algebra.\todo{clarify with the $U(1)$'s}
 
@@ -69,17 +82,17 @@
         \begin{enumerate}
             \item \textbf{Product structure:} the $\mN=2$ selection rule that dictates that the classical moduli space has to look locally like a product \eqref{eq:classicalmodulispaceproduct} comes from the supersymmetry algebra and therefore also holds at the quantum level. Hence, locally, we have
             \begin{equation}
-                \M_q = \M_{V,q}\times\M_{H,q}.\label{eq:quantummodulispaceproduct}
+                \M_q = \M^V_{q}\times\M^H_{q}.\label{eq:quantummodulispaceproduct}
             \end{equation}
-            \item \textbf{The Higgs branch is classically exact:} $\mN=2$ supersymmetry implies that the special Kähler metric on $\M_{V,c}$ and that the imaginary part if the generalized complexified gauge coupling $\tau_{IJ}$ are related. The former only depends on the scalar fields $\phi^I$ while the latter undergoes renormalization at one-loop. Its quantum-corrected expression is a function of the strong-coupling scale $\Lambda$, which therefore appears in the lagrangian in the same way as a VEV of a scalar belonging to a vector multiplet. However, the metric does not depend on those scalars and therefore doe snot depend on $\Lambda$ either. This means that taking the limit $\Lambda\to0$ will not change the metric in anyway; it classically exact:
+            \item \textbf{The Higgs branch:} $\mN=2$ supersymmetry implies that the special Kähler metric on $\M^V_{c}$ and that the imaginary part if the generalized complexified gauge coupling $\tau_{IJ}$ are related. The former only depends on the scalar fields $\phi^I$ while the latter undergoes renormalization at one-loop. Its quantum-corrected expression is a function of the strong-coupling scale $\Lambda$, which therefore appears in the lagrangian in the same way as a VEV of a scalar belonging to a vector multiplet. However, the metric does not depend on those scalars and therefore does not depend on $\Lambda$ either. This means that taking the limit $\Lambda\to0$ will not change the metric. In other words, the Higgs branch is classically exact:
             \begin{equation}
-                \M_{H,c}=\M_{H,q}.
+                \M^H_{c}=\M^H_{q}.
             \end{equation}
             On the other hand, the metric on the Coulomb brach can receive quantum corrections and solving the theory boils down to finding this metric. This explain why we will mostly focus on the Coulomb branch metric.
             \item \textbf{Existence of moduli space:} in $\mN=2$ theories, the moduli space can never be completely lifted, unlike for $\mN=1$ theories for example. This is obvious for the Higgs branch; since it is classicaly exact, existance at classical level implies existence at the quantum level. For the Coulomb branch on the other hand, it is less obvious and it is explained in \cite[p. 282]{bertolinisusy}.
         \end{enumerate}
 
-        What about singularities? The classical moduli space admits singularities of enhanced gauge symmetry. However, the quantum moduli space cannot admit such singularities. This a result that we will show in the following. More precisely, it can have singularities where some massive particles become massless but those particles will never be gauge fields.There are no point of enhanced gauge symmetry and the theory is always in the Coulomb phase. In stead, there exist other types of singularities, such as Argyres-Douglas singularities for example, where mutually non-local particles become simultaneously massless.
+        What about singularities? The classical moduli space admits singularities of enhanced gauge symmetry. However, the quantum moduli space cannot admit such singularities. This a result that we will show in the following. More precisely, it can have singularities where some massive particles become massless but those particles will never be gauge fields. There are no point of enhanced gauge symmetry and the theory is always in the Coulomb phase. In stead, there exist other types of singularities, such as Argyres-Douglas singularities for example, where mutually non-local particles become simultaneously massless.
 
         \begin{figure}[H]
             \centering
@@ -87,15 +100,64 @@
             \caption{$\mN=2$ quantum moduli space, from \cite{bertolinisusy}.}
         \end{figure}
 
+\section{Monopoles, dyons and electric-magnetic duality}
+
+    Let us start by considering electromagnetism without matter, i.e. a non-supersymmetric pure gauge theory with gauge group $\U(1)$. The action is given by
+    \begin{equation}
+        S[A]=\frac{1}{4g^2}\int F\wedge\star F
+    \end{equation}
+    with $F=\d A$ and the equations of motion are
+    \begin{equation}
+        \d\star F=0,\qquad \d F=0.
+    \end{equation}
+    They are invariant under the transformation
+    \begin{equation}
+        S:F\mapsto\star F,\star F\mapsto-F
+    \end{equation}
+    which exchanges the electric and magnetic fields. It is called \emph{S-duality}. In the presence of electric sources, the theory can still be invariant under S-duality if one adds magnetic sources, i.e. \emph{monopoles}. The action reads
+    \begin{equation}
+        S[A]=\frac{1}{4g^2}\int F\wedge\star F+A\wedge j_e-A\wedge j_m
+    \end{equation}
+    \todo{verify expression f the action}and the equations of motion are now Maxwell equations:
+    \begin{equation}
+        \d\star F=j_e,\qquad \d F=-j_m.
+    \end{equation}
+    S-duality now acts as
+    \begin{equation}
+        S:F\mapsto\star F,\qquad \star F\mapsto-F,\qquad j_e\mapsto j_m,\qquad j_m\mapsto-j_e.
+    \end{equation}
+    The presence of magnetic monopoles implies quantization of the charges: a theory with electric charge $q$ and magnetic charge $p$ can only be consistently quantized if the \emph{Dirac quantization condition}
+    \begin{equation}
+        qp=2\pi n,\qquad n\in\Z
+    \end{equation}
+    holds The magnetic and electric charges are therefore inversely proportional, if one is big, the other must be small. Therefore, S-duality is a strong-weak duality coupling duality. It not a symmetry of the theory since it acts on the couplings. Rather, it map s a description of the theory to another description of the same theory.
+
+    One can always add the term
+    \begin{equation}
+        \frac{\theta e^2}{32\pi^2}\tr(F\wedge\star\tilde{F}),
+    \end{equation}
+    called the $\theta$-term and it does not change Maxwell equation. In the presence of a magnetic monopole, a $\theta$-terms has an interesting physical effect, called the \emph{Witten effect}: a particle with magnetic charge $p=\frac{4\pi}{e}$ and $\U(1)$ electric charge $n_ee$ has the following electric charge:
+    \begin{equation}
+        q = n_ee-\frac{\theta e^2}{8\pi^2}p=n_ee-\frac{\theta e}{2\pi}.
+    \end{equation}
+    Therefore the magnetic charge contributes to the electric charge. In particular, a magnetic monopole always carries an electric charge.
+
+    States that are both magnetically and electrically charged are called \emph{dyons}. In the presence of such states, the Dirac quantization condition is generalized to the \emph{Dirac-Schwinger-Zwanziger} quantization condition:
+    \begin{equation}
+        q_1p_1-q_2p_2=2\pi n,\qquad n\in\Z.
+    \end{equation}
+
+
+
 \section{Low energy effective actions}
 
     \subsection{General discussion}
 
         The leading dynamic of any (supersymmetric or non-supersymmetric) asyptotically free theory around a vacua where the potential vanishes is governed by massless fields. In this limit, the theory is scale invariant, by definition, and is at an IR fixed point of the RG flow. However, the nature of this IR fixed point can be if two kinds:
-        \begin{enumerate}
+        \begin{itemize}
             \item If no massless fields are present initially, there are no propagating degrees of freedom in the low-energy limit and the IR fiwed point is trivial.
             \item If the initial theory contains some massless fields, the theory can be in a free or interacting phase and the IR fixed point is non-trivial.
-        \end{enumerate}
+        \end{itemize}
         
         \begin{theorem}[Colemann-Gross]
             In four spacetime dimensions, any theory of scalars, spinors and abelian gauge fields flows in the IR to a free (or trivial if everything gets a mass) theory.
@@ -146,9 +208,9 @@
 
         If we were to add a hypermultiplet, we would have to additional complex scalars (one from each chiral superfields of the decomposition of the hypermultiplet). This new sigma-model would then define quaternionic manifold known as a Hyperkähler manifold. Due to the existence of those two sets of scalars (those belonging to the vector multiplet and those belonging to the hypermultiplet), the classical moduli space has the more general form
         \begin{equation}
-            \M_c=\M_V\times\M_H
+            \M_c=\M^V\times\M^H
         \end{equation}
-        where $\M_V$ is a Kähler manifold and $\M_H$ a Hyperkähler manifold.
+        where $\M^V$ is a Kähler manifold and $\M^H$ a Hyperkähler manifold.
 
 
     \section{$\SU(2)$ $\mN=2$ supersymmetric Yang-Mills theory in $D=4$}
@@ -158,6 +220,43 @@
 \section{Generalization to other groups}
 
 \section{SW geometry from string duality}
+
+\appendix
+
+\section{Weyl group}
+
+    Let $V$ be a finite-dimensional vector space with inner product $\prod{\cdot}{\cdot}$. A \emph{root system} $\Phi$ in $V$ is a finite set of non-zero vectors, called \emph{roots}, that satisfy the following conditions:
+    \begin{enumerate}
+        \item $\text{span}\Phi=V$,
+        \item if $\alpha\in\Phi$, the only scalar multiples of $\alpha$ in that belongs to $\Phi$ are $\alpha$ itself and $-\alpha$,
+        \item for all $\alpha\in\Phi$, the set $\Phi$ is closed under reflection through the hyperplane orthogonal to $\alpha$. In other words, $\Phi$ it is closed under the maps
+        \begin{equation}
+            s_\alpha(\beta)\equiv\beta-2\frac{\prod{\alpha}{\beta}}{\prod{\alpha}{\alpha}}\alpha,
+        \end{equation}
+        \item integrability: if $\alpha,\beta\in\Phi$, the projection of $\beta$ onto the line through $\alpha$ is an integer or half-integer multiple of $\alpha$, i.e.
+        \begin{equation}
+            (\alpha,\beta)\equiv 2\frac{\prod{\alpha}{\beta}}{\prod{\alpha}{\alpha}}\in\N.
+        \end{equation}
+    \end{enumerate}
+    Two root systems $(V_1,\Phi_1)$ and $(V_2,\Phi_2)$ are \emph{isomorphic} if there is an invertible linear transformation $V_1\to V_2$ which sends $\Phi_1$ to $\Phi_2$ such that foreach pair of roots, the number $(\alpha,\beta)$ is preserved. The \emph{root lattice} of a root system $\Phi$ is the $\Z$-submodule of $V$ generated by $\Phi$.
+
+    The \emph{Weyl group} $W$ of a root system $\Phi$ is the group generated by all the maps $s_\alpha$ where the product is the composition of maps. $W$ is a then a subgroup of the orthogonal group $\O(V)$ and, since the maps $s_\alpha$ and that they leave $\Phi$ invariant and that $\Phi$ is finite, $W$ is necessarily a finite group.
+
+    \begin{examp}
+        Let us work out the example of the root system $A_2$ in details, the root system of the Lie algebra $\mathfrak{su(3)}$. After computing the fundamental roots of the Lie algebra, we find that
+        \begin{equation}
+            V=\{v\in\R^3|\sum_i v_i=0\}
+        \end{equation}
+        and that the roots are given by
+        \begin{equation}
+            \alpha_{12}=e_1-e_2,\qquad
+            \alpha_{23}=e_2-e_3,\qquad
+            \alpha_{31}=e_3-e_1
+        \end{equation}
+        and their opposite, where $\{e_i\}_{i=1,\dots,3}$ is the canonical basis of $\R^3$. One can show that the group generated by the maps $s_{\alpha_{ij}}$ is $W=S_3$.
+    \end{examp}
+
+    More generally, the Weyl group for $A_n$ is $S_{n+1}$.
 
 
 

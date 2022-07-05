@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1656695872 "main.bcf" "main.bbl" "main" 1656696175
+["biber main"] 1657033833 "main.bcf" "main.bbl" "main" 1657033839
   "bibliography.bib" 1656694392 179 1c1c0ae33d4857b4f6ca69dcb8c03d79 ""
-  "main.bcf" 1656696175 106233 acca7b42de7197ecbfe9a4e20de2e520 "pdflatex"
+  "main.bcf" 1657033839 106233 acca7b42de7197ecbfe9a4e20de2e520 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1656696174 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Seiberg-Witten Theory/main.tex" "main.pdf" "main" 1656696175
+["pdflatex"] 1657033838 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Seiberg-Witten Theory/main.tex" "main.pdf" "main" 1657033839
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607267403 40136 52321c4f09ab9f3c383093364073b7e8 ""
@@ -104,6 +104,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1623060326 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1623060326 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1623060326 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1623060326 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1623060326 36281 c355509802a035cadc5f15869451dcee ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1623060326 36094 798f80770b3b148ceedd006d487db67c ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1623060326 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -111,6 +112,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1623060326 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1623060326 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1623060326 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1623060326 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1623060326 32716 08e384dc442464e7285e891af9f45947 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb" 1623060326 21098 d4aee7c0aac232caac5688b586b9363c ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1623060326 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -386,16 +388,16 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1623060370 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1609679784 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1609679784 20688 beaddf14d96104d4bf016523be5395c5 ""
-  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Seiberg-Witten Theory/main.tex" 1656696173 14124 25535109b1c3ef8301801e9923b1fe06 ""
+  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Seiberg-Witten Theory/main.tex" 1657033833 20972 f02ff209df2d41583e8575b80f136512 ""
   "Pictures/classicalmodulispace.png" 1656693105 38651 31bf9e1e9a2c674b28a799ff1898346c ""
   "Pictures/quantummodulispace.png" 1656693114 40809 117f1dc1a82eb71975425c85c917f163 ""
-  "custom_macros.tex" 1653414228 5391 295b234a720913f7cfac2bace9d369d5 ""
-  "main.aux" 1656696175 4993 b1275d204ec5c1eb6f817ca246d3b1c7 "pdflatex"
-  "main.bbl" 1656695873 1616 1c7067b53ce68ecad540a6ea4305633d "biber main"
-  "main.out" 1656696175 2017 f1397e0f832c697f3f7b45e77e75cde6 "pdflatex"
-  "main.run.xml" 1656696175 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tex" 1656696173 14124 25535109b1c3ef8301801e9923b1fe06 ""
-  "main.toc" 1656696175 1422 aa2bca63d66ee25c4712db76bab230e0 "pdflatex"
+  "custom_macros.tex" 1656921622 5436 88e54683fcd0975dcdafca45845bf6a0 ""
+  "main.aux" 1657033839 5791 dd13346264b915c5bdf5fd783fac2a23 "pdflatex"
+  "main.bbl" 1657033834 1616 1c7067b53ce68ecad540a6ea4305633d "biber main"
+  "main.out" 1657033839 2401 ae22cd4e94c1136329dc13fb6dbf017a "pdflatex"
+  "main.run.xml" 1657033839 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tex" 1657033833 20972 f02ff209df2d41583e8575b80f136512 ""
+  "main.toc" 1657033839 1661 397d0e4baed230c7e42f7aa4c378c871 "pdflatex"
   "worksheetclass.cls" 1656357142 6186 63353e57c260def210be553cd5879d93 ""
   (generated)
   "main.aux"
