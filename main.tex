@@ -62,19 +62,28 @@
 
     \subsection{Classical moduli space of vacua}
 
-        The potential \eqref{eq:potential} vanishes if and only if $\phi$ belongs to the complexified Cartan $\mathfrak{h}_\C$ of $\mathfrak{g}$. At a general point of the moduli space, the scalar fields matrices can be diagonalized using the gauge symmetry. The moduli space is therefore parametrized by the eigenvalues of the matrices, i.e. by $r$ complex numbers, where $r$ is the rank the $\mathfrak{h}$. The diagonalization step does not fully breaks the gauge symmetry, there still is $U(1)^r$ symmetry. The low energy dynamic is the that of $r$ massless vector multiplets and $\dim G-r$ massive ones, with masses depending on the specific VEV's.
-
-        Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M^V$ and the Higgs branch $\M^H$ is empty. The classical moduli space is therefore
+        The potential \eqref{eq:potential} vanishes if and only if $\phi$ belongs to $\mathfrak{h}_\C$, the complexified Cartan subalgebra of $\mathfrak{g}$. At a general point of the moduli space, the scalar fields matrix $\phi$ can be diagonalized using the gauge symmetry and put in the form
+        \begin{equation}
+            \phi=\sum^r_{I=1}a^Ih_I, a^I\in\C
+        \end{equation}
+        where $h^I$ are the generators of the Cartan subalgebra $\mathfrak{h}$, where $r$ is the rank of $\mathfrak{g}$, i.e. the dimension of $\mathfrak{h}$. The moduli space is therefore parametrized by the coordinates $a^I$. At a generic point, the gauge group is broken to $\U(1)^r\times W_G$, where $W_G$ is the Weyl group of $G$, the group of residual gauge symmetry, while acting on $\phi$, do not not take it out of the Cartan subalgebra. The low energy dynamic is the that of $r$ massless vector multiplets and $\dim G-r$ massive ones, with masses depending on the specific VEV's. Since there is only scalar fields coming from the vector superfield (transforming in the adjoint representation), there is only a Coulomb branch $\M^V$ and the Higgs branch $\M^H$ is empty. Locally, the classical moduli space is therefore given by
         \begin{eqnarray}
-            \M_c = \M^V_{c}\times\M^H_{c}=\frac{\C^r}{W_G}\label{eq:classicalmodulispaceproduct}
+            \M_c = \M^V_{c}\times\M^H_{c}=\frac{\C^r}{W_G}.\label{eq:classicalmodulispaceproduct}
         \end{eqnarray}
-        where the $W_G$ factor is the Weyl group of the Cartan subalgebra, the remenant of the gauge symmetry that acts and the Cartan algebra.\todo{clarify with the $U(1)$'s}
 
         \begin{figure}[H]
             \centering
             \includegraphics[scale=0.35]{Pictures/classicalmodulispace.png}
             \caption{$\mN=2$ classical moduli space, from \cite{bertolinisusy}.}
         \end{figure}
+
+        \begin{examp}
+            Taking $G=\SU(N)$, the Weyl group is $S_{N-1}$ and the rank is $N-1$. A natural set of $\U(1)^{N-1}\times S_{N-1}$ invariant coordinates on the $(N-1)$-dimensional moduli space is $\M_c=\C^{N-1}/S_{N-1}$ can be shown to be
+            \begin{equation}
+                u_2=\sum_{i<j}a^ia^j,\quad u_3=\sum_{i<j<k}a^ia^ja^k,\quad \dots,\quad u_N=a^1\dots a^N, \qquad i,j,k=1,\dots,N
+            \end{equation}
+            where $\phi=\text{diag}(a^1,\dots,a^N)$ with $\sum^N_{i=1} a^i=0$.
+        \end{examp}
 
     \subsection{Quantum moduli space of vacua}
 

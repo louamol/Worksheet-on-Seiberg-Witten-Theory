@@ -17,10 +17,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}$\mathcal {N}=2$ effective action}{6}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}$\text {SU}(2)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory in $D=4$}{6}{section.4}%
+\contentsline {section}{\numberline {4}$\text {SU}(2)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory in $D=4$}{7}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Generalization to other groups}{6}{section.5}%
+\contentsline {section}{\numberline {5}Generalization to other groups}{7}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}SW geometry from string duality}{6}{section.6}%
+\contentsline {section}{\numberline {6}SW geometry from string duality}{7}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Weyl group}{6}{appendix.A}%
+\contentsline {section}{\numberline {A}Weyl group}{7}{appendix.A}%
