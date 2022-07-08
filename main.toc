@@ -17,10 +17,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}$\mathcal {N}=2$ effective action}{6}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}$\text {SU}(2)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory in $D=4$}{7}{section.4}%
+\contentsline {section}{\numberline {4}$\text {SU}(2)$ $\mathcal {N}=2$ supersymmetric Yang-Mills theory}{7}{section.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Generalization to other groups}{7}{section.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}SW geometry from string duality}{7}{section.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Weyl group}{7}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}Root systems}{7}{subsection.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}Weyl group}{7}{subsection.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}Dynkin diagrams}{8}{subsection.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.4}Semisimple Lie algebras and roots}{8}{subsection.A.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.5}Weights}{9}{subsection.A.5}%

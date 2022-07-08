@@ -1917,6 +1917,7 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0500.tfm
+INPUT /home/louan/.miktex/texmfs/data/pdftex/config/pdftex.map
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
@@ -1924,7 +1925,6 @@ INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
-INPUT /home/louan/.miktex/texmfs/data/pdftex/config/pdftex.map
 INPUT ./Pictures/classicalmodulispace.png
 INPUT ./Pictures/classicalmodulispace.png
 INPUT Pictures/classicalmodulispace.png
@@ -2024,8 +2024,6 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.p
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
